@@ -1,15 +1,15 @@
 
-class Node {
+class Node1 {
 
     int data;
-    Node next;
+    Node1 next;
 
-    Node(int data, Node next1) {
+    Node1(int data, Node1 next1) {
         this.data = data;
         this.next = next1;
     }
 
-    Node(int data1) {
+    Node1(int data1) {
         this.data = data1;
         this.next = null;
     }
@@ -17,11 +17,11 @@ class Node {
 
 public class A4_LList {
 
-    public static Node cnverter(int arr[]) {
-        Node head = new Node(arr[0]);
-        Node mover = head;
+    public static Node1 cnverter(int arr[]) {
+        Node1 head = new Node1(arr[0]);
+        Node1 mover = head;
         for (int i = 1; i < arr.length; i++) {
-            Node temp = new Node(arr[i]);
+            Node1 temp = new Node1(arr[i]);
             mover.next = temp;
             mover = temp;
         }
@@ -31,9 +31,9 @@ public class A4_LList {
 
     public static void main(String[] args) {
         int[] arr = new int[]{1, 2, 3, 4, 5};
-        Node head = cnverter(arr);
+        Node1 head = cnverter(arr);
         System.out.println(head.data);
-        Node m = head;
+        Node1 m = head;
         int count =0;
         while(m!=null)
         {
